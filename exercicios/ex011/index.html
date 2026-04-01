@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML 5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir este site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 500px)" srcset="imagens/image-p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imagens/image-m.png" type="image/png">
+        <img src="imagens/image-g.png" alt="Imagem Flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a produzir áudios em HTML 5.</p>
+    <audio controls preload="metadata" autoplay loop>
+        <source src="media/Stake.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio.
+        <p>Clique aqui para baixar o arquivo: <a href="https://studio.youtube.com/channel/UCnz3UTGwM8UCbXmiJWdT-LQ/music"></a></p>
+    </audio>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 {/*box level*
+            height: 300px;
+            width:300px;
+            background-color: lightgray;
+            /*
+            border-width: 10px;
+            border-style: solid;
+            border-color: rgb(141, 238, 238);
+            Shortcut, tem que ser nesta ordem:*/
+            
+            /*display: inline; reduz a caixa em linha. Logo não poderemos usar as configurações box level, é possível misturar as duas configurações*/
+            border: 10px solid rgb(141, 238, 238);
+
+            /*padding-top:10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            Shortcut, o sentido do relógio simplificando todos os paddings:
+            */
+            padding: /*10px 10px 10px, 10px; ou*/ 10px;
+
+            /*Então:*/
+            margin: 20px auto 40px auto;
+            /*margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-right: 20px;*/
+
+
+        /*Para ficar no meio:
+            margin: auto; 
+
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+            Simplpificando também nesta ordem*/
+            outline: 5px dashed salmon;
+        }
+
+        a {/*inline level*/
+            border-width: 10px;
+            border-style: solid;
+            border-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos são exemplos também de box-level, mas os <a href="#">links</a> são exemplos de inline-level</p>
+</body>
+</html>
